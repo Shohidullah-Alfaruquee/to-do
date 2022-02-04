@@ -1,25 +1,65 @@
-.App {
-  text-align: center;
-}
-.todoApp{
+.todo{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
-.form{
-  margin-top: 2rem;
+
+.todoApp{
+margin-top: 2rem;
   text-align: center;
 }
 
-input, button{
-  padding: 0.2rem 0.3rem;
+input{
+  width: 20rem;
+  padding: 0.21rem;
 }
 button{
-  margin: 0 0.2rem;
+  padding: 0.1rem 0.3rem;
+  margin: 0.2rem;
+  cursor: pointer;
 }
+
+button:hover{
+  background-color: darkcyan;
+}
+.edit{
+  background-color: darkolivegreen;
+}
+.edit:hover{
+  background-color: darkorchid;
+  color: white;
+}
+.delete{
+  background-color: rgba(255, 30, 0, 0.637);
+
+}
+.delete:hover{
+  background-color: darkred;
+  color: white;
+}
+
 .todo-list{
+  margin-top: 1.2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+table{
   border-collapse: collapse;
 }
-.todo-list>tr,td{
+thead{
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+tr, td{
   border: 1px solid black;
+}
+td{
+  padding: 0.2rem;
+}
+tr:hover{
+  background-color: cadetblue;
 }
